@@ -125,6 +125,12 @@ body{
     color: var(--black);
 }
 
+.home .counting .box h3{
+    font-size: 2rem;
+    color: var(--blue);
+    font-weight: 600;
+}
+
 
 
 

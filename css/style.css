@@ -194,6 +194,39 @@ body{
     background-color: var(--blue);
 }
 
+.service{
+    min-height: 100vh;
+}
+
+.service .box-container{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.service .box-container .box{
+    height: 25rem;
+    width: 25rem;
+    box-shadow: 0 .2rem .5rem rgba(0, 0, 0,.3);
+    border-left: .5rem solid #61c2a2;
+    border-right: .5rem solid #61c2a2;
+    border-radius: .5rem;
+    text-align: center;
+    padding-top: 6rem;
+    margin: 2rem 3rem;
+}
+
+.service .box-container .box .uil{
+    color: var(--blue);
+    font-size: 5rem;
+}
+
+.service .box-container .box p{
+    color: black;
+    font-size: 1.1rem;
+}
+
 
 
 

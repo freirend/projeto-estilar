@@ -162,6 +162,38 @@ body{
     box-shadow: 2.5rem 2.5rem 0 1rem #61c2a2;
 }
 
+.about .info{
+    padding: 2rem;
+    margin-top: 3rem;
+}
+
+.about .info h2{
+    color: var(--blue);
+    font-size: 3rem;
+}
+
+.about .info p{
+    font-size: 1.4rem;
+    color: var(--black);
+    margin: 2rem 0;
+}
+
+.about .info .icons a{
+    font-size: 2rem;
+    line-height: 4rem;
+    text-align: center;
+    background-color: var(--black);
+    color: white;
+    border-radius: .5rem;
+    margin-right: 1rem;
+    text-decoration: none;
+    padding: 3px 5px;
+}
+
+.about .info .icons a:hover{
+    background-color: var(--blue);
+}
+
 
 
 

@@ -26,6 +26,18 @@ body{
     overflow-x: hidden;
 }
 
+.heading{
+    font-size: 4rem;
+    text-align: center;
+    letter-spacing: 1.4rem;
+    color: var(--black);
+    margin: 2rem auto;
+    padding-top: 6rem;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-color: var(--blue);
+}
+
 .header{
     display: flex;
     align-items: center;
@@ -133,6 +145,21 @@ body{
     font-size: 2rem;
     color: var(--blue);
     font-weight: 600;
+}
+
+.about{
+    min-height: 100vh;
+    padding-bottom: 3rem;   
+}
+
+.about .image{
+    padding: 2rem;
+}
+
+.about .image img{
+    height: 45rem;
+    object-fit: cover;
+    box-shadow: 2.5rem 2.5rem 0 1rem #61c2a2;
 }
 
 

@@ -2,7 +2,7 @@ const burguer = document.querySelector('.uil-bars');
 const navlist = document.querySelector('#nav')
 const navbtn = document.querySelectorAll('.nav-btn')
 let valueCount = document.querySelectorAll('.count')
-let interval = 5000;
+let interval = 6000;
 
 
 burguer.addEventListener('click', ()=>{

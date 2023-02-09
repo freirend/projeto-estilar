@@ -13,7 +13,6 @@
     margin: 0; padding: 0;
     box-sizing: border-box;
     transition: all .2s linear;
-    text-transform: capitalize;
     text-decoration: none;
     font-family: 'Exo 2', sans-serif;
 }
@@ -72,7 +71,70 @@ body{
     display: none;
 }
 
+.header .uil-multiply{
+    display: none;
+}
 
+.home .hero{
+    min-height: 60vh;
+    background-image: url(../imgs/imagem-jumbo.jpg);
+    background-repeat: no repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+.home .hero .text1{
+    font-size: 5rem;
+    width: 50rem;
+    background-color: #fff;
+    padding: 1rem 2rem;
+    text-align: center;
+    opacity: .8;
+    color: var(--black);
+}
+
+.home .hero .text2{
+    font-size: 3rem;
+    width: 40rem;
+    background-color: var(--blue);
+    padding: 1rem 2rem;
+    text-align: center;
+    opacity: .8;
+    margin-top: 1rem;
+    color: white;
+}
+
+.home .counting{
+    min-height: 40vh;
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.home .counting .box{
+    margin: 2rem 4rem;
+    text-align: center;
+}
+
+.home .counting .box .count{
+    font-size: 7rem;
+    color: var(--black);
+}
+
+
+
+
+
+
+
+
+.uil-multiply{
+    transform: rotate(180deg);
+}
 
 
 
@@ -94,9 +156,16 @@ body{
         display: block;
     }
 
+    .header .uil-multiply{
+        font-size: 2.5em;
+        color: var(--black);
+        cursor: pointer;
+        display: block;
+    }
+
     .header nav{
         position: fixed;
-        top: 7rem; right: 0;
+        top: 7rem; right: -120% ;
         height: 100vh;
         width: 100vw;
         background-color: rgba(0, 0, 0,.5);
@@ -119,6 +188,34 @@ body{
     .header nav ul li a{
         display: block;
         padding: .5rem 0;
+        border: .1rem solid rgba(0, 0, 0,.3);
+        width: 25rem;
+        border-radius: 5rem;
+        text-align: center;
     }
-    
+
+    .header nav ul li a:hover{
+        background: #333;
+        color: #fff;
+    }
+
+    .header .nav-toggle{
+        right: 0%;
+    }
+
+    .header .nav-hidden{
+        right: -120%;
+    }
+}
+
+@media (max-width: 440px){
+    .home .hero .text1{
+        font-size: 3.5rem;
+        width: 40rem;
+    }
+
+    .home .hero .text2{
+        font-size: 2.5rem;
+        width: 33rem;
+    }
 }

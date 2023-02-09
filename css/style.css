@@ -227,6 +227,40 @@ body{
     font-size: 1.1rem;
 }
 
+.project{
+    min-height: 100vh;
+    background: rgb(34, 34, 34);
+}
+
+.project .heading{
+    color: white;
+}
+
+.project .box-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.project .box-container .box{
+    height: 20rem;
+    width: 30rem;
+    margin: 2rem;
+    border-radius: .5rem;
+    box-shadow: 0 .2rem .5rem black;
+    overflow: hidden;
+}
+
+.project .box-container .box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    cursor: default;
+}
+
+.project .box-container .box img:hover{
+    transform: scale(1.4);
+}
 
 
 

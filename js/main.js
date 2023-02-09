@@ -1,8 +1,8 @@
 const burguer = document.querySelector('.uil-bars');
 const navlist = document.querySelector('#nav')
 const navbtn = document.querySelectorAll('.nav-btn')
-const valueCount = document.querySelectorAll('.count')
-const interval = 5000;
+let valueCount = document.querySelectorAll('.count')
+let interval = 5000;
 
 
 burguer.addEventListener('click', ()=>{
@@ -28,14 +28,26 @@ for (c = 0; c < navbtn.length; c++){
 }
 
 valueCount.forEach((count) => {
-    var startCount = 0;
-    var endCount = Number(count.getAttribute("data-count"));
-    var duration = Math.floor(interval / endCount);
-    var counter = setInterval(function(){
+    let startCount = 0;
+    let endCount = Number(count.getAttribute("data-count"));
+    let duration = Math.floor(interval / endCount);
+    let counter = setInterval(function(){
         startCount += 1;
         count.textContent = startCount;
         if (startCount == endCount){
             clearInterval(counter);
+            if (valueCount[0].innerHTML === '700'){
+                valueCount[0].innerHTML += '+'
+            }
+            if (valueCount[1].innerHTML === '500'){
+                valueCount[1].innerHTML += '+'
+            }
+            if (valueCount[2].innerHTML === '500'){
+                valueCount[2].innerHTML += '+'
+            }
+            if (valueCount[3].innerHTML === '15'){
+                valueCount[3].innerHTML += '+'
+            }
         }
     }, duration)
 })

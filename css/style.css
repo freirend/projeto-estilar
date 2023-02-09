@@ -117,7 +117,11 @@ body{
 
 .home .counting .box{
     margin: 2rem 4rem;
-    text-align: center;
+    text-align: left;
+    width: 200px;
+    padding: 5px;
+    border-left: 1px solid #61c2a2;
+    border-bottom: 1px solid #61c2a2;
 }
 
 .home .counting .box .count{
